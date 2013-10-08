@@ -20,6 +20,8 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/etc
 mkdir -p %{buildroot}/usr
 cp -arf mmfw-sysconf-cleansdk-e4x12/* %{buildroot}
+mkdir -p %{buildroot}/usr/share/license
+cp LICENSE %{buildroot}/usr/share/license/%{name}
 
 %post 
 
@@ -35,3 +37,4 @@ cp -arf mmfw-sysconf-cleansdk-e4x12/* %{buildroot}
 /usr/share/pulseaudio/alsa-mixer/paths/*.conf
 /usr/share/pulseaudio/alsa-mixer/paths/*.common
 /usr/share/pulseaudio/alsa-mixer/profile-sets/*.conf
+/usr/share/license/%{name}
