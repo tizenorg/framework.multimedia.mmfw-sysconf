@@ -1,6 +1,6 @@
 Name:       mmfw-sysconf
 Summary:    Multimedia Framework system configuration package
-Version:    0.1.207
+Version:    0.1.220
 Release:    0
 VCS:        framework/multimedia/mmfw-sysconf#mmfw-sysconf_0.1.110-0-144-g25720f9f7daad9a897662eb6059d71d958cc3f06
 Group:      TO_BE/FILLED_IN
@@ -67,11 +67,7 @@ mkdir -p %{buildroot}/mmfw-sysconf-e3250
 cp -arf mmfw-sysconf-e3250/* %{buildroot}/mmfw-sysconf-e3250
 %else
 mkdir -p %{buildroot}/mmfw-sysconf-simulator
-%if 0%{?tizen_profile_wearable}
-cp -arf mmfw-sysconf-simulator.wearable/* %{buildroot}/mmfw-sysconf-simulator
-%else
-cp -arf mmfw-sysconf-simulator.mobile/* %{buildroot}/mmfw-sysconf-simulator
-%endif
+cp -arf mmfw-sysconf-simulator/* %{buildroot}/mmfw-sysconf-simulator
 %endif
 
 %ifarch %{arm}
@@ -125,7 +121,6 @@ rm -rf /mmfw-sysconf-simulator
 /mmfw-sysconf-simulator/usr/share/pulseaudio/alsa-mixer/paths/*.conf
 /mmfw-sysconf-simulator/usr/share/pulseaudio/alsa-mixer/paths/*.common
 /mmfw-sysconf-simulator/usr/share/pulseaudio/alsa-mixer/profile-sets/*.conf
-/mmfw-sysconf-simulator/opt/system/*
 /usr/share/license/mmfw-sysconf-simulator
 %endif
 
