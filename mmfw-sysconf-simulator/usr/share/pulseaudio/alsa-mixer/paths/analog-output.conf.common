@@ -95,7 +95,7 @@
 
 [Element PCM]
 switch = ignore
-volume = merge
+volume = ignore
 override-map.1 = all
 override-map.2 = all-left,all-right
 
