@@ -41,7 +41,7 @@ load-module module-esound-protocol-unix
 load-module module-native-protocol-unix
 
 load-module module-bluetooth-policy
-load-module module-bluetooth-discover aptx_lib_name=libbtaptx-armv6L.so
+load-module module-bluetooth-discover
 
 ### Custom policy module to route between bt<=speaker
 load-module module-policy

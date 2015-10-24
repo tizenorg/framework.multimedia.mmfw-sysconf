@@ -81,5 +81,4 @@ set-default-source alsa_input.0.analog-stereo
 load-module module-null-sink
 load-module module-null-source
 
-load-module module-remap-sink sink_name=mono_alsa master=alsa_output.0.analog-stereo channels=1
 load-sample camera-shutter /usr/share/sounds/mm-camcorder/capture_shutter_02.wav
