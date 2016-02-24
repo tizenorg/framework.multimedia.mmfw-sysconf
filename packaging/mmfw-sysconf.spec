@@ -1,6 +1,6 @@
 Name:       mmfw-sysconf
 Summary:    Multimedia Framework system configuration package
-Version:    0.1.260
+Version:    0.1.259
 Release:    0
 VCS:        framework/multimedia/mmfw-sysconf#mmfw-sysconf_0.1.110-0-144-g25720f9f7daad9a897662eb6059d71d958cc3f06
 Group:      System Environment/Multimedia
